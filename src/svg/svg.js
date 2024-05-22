@@ -45,6 +45,10 @@ export const nodejs = {
 	name: "NodeJS",
 	source: "src/svg/nodejs-svgrepo-com.svg",
 };
+export const postgres = {
+	name: "PostgreSQL",
+	source: "src/svg/postgresql-svgrepo-com.svg",
+};
 export const postman = {
 	name: "Postman",
 	source: "src/svg/postman-svgrepo-com.svg",
@@ -57,6 +61,10 @@ export const react = { name: "React", source: "src/svg/react-svgrepo-com.svg" };
 export const redux = {
 	name: "Redux",
 	source: "src/svg/redux-fill-svgrepo-com.svg",
+};
+export const tailwind = {
+	name: "Tailwind CSS",
+	source: "src/svg/tailwind-css-svgrepo-com.svg",
 };
 export const typescript = {
 	name: "TypeScript",

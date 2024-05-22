@@ -10,9 +10,11 @@
 		mysql,
 		nestjs,
 		nodejs,
+		postgres,
 		react,
 		redux,
 	} from "../svg/svg";
+	import Carousel from "./Carousel.svelte";
 
 	let steps = [
 		{
@@ -43,7 +45,7 @@
 			name: "Complaints List",
 			description:
 				"Back End application for creation of an API that successfully manages the creation, edition, deletion and filtering of client's complaints.",
-			techs: [nestjs, aws, mysql],
+			techs: [nestjs, aws, postgres],
 			href: "https://github.com/mauroraviolo23/complaints-list-cenco",
 		},
 		{
@@ -77,6 +79,14 @@
 			<p class="text-center sm:text-lg md:text-xl">
 				Here's some information about me 👇
 			</p>
+		</div>
+	</section>
+	<section id="stack" class="py-20 flex flex-col gap-24">
+		<div class="flex flex-col gap-2 text-center">
+			<h3 class="text-4xl">
+				My <span class="chakra text-sky-500 font-bold">technical stack</span>
+			</h3>
+			<Carousel />
 		</div>
 	</section>
 	<section id="projects" class="py-20 flex flex-col gap-24">
