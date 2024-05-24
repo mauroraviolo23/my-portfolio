@@ -15,13 +15,33 @@ html {
 }
 
 @keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
+  0%   {transform: translateX(0);}
+  25%  {transform: translateX(-10%);}
+  50%  {transform: translateX(-15%);}
+  75%  {transform: translateX(-10%);}
+  100% {transform: translateX(0);}
+}
+
+@media (max-width: 600px) {
+  @keyframes slide {
+    0%   {transform: translateX(5%);}
+    25%  {transform: translateX(-65%);}
+    50%  {transform: translateX(-130%);}
+    75%  {transform: translateX(-65%);}
+    100% {transform: translateX(5%);}
   }
 }
+
+@media (max-width: 450px) {
+  @keyframes slide {
+    0%   {transform: translateX(0%);}
+    25%  {transform: translateX(-100%);}
+    50%  {transform: translateX(-200%);}
+    75%  {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+  }
+}
+
 
 .logos {
   overflow: hidden;
@@ -32,7 +52,7 @@ html {
 
 .logos-slide {
   display: flex;
-  animation: 60s slide infinite linear;
+  animation: 30s slide infinite linear;
 }
 
 .logos:hover .logos-slide:hover {
@@ -45,4 +65,30 @@ html {
   justify-content: space-between;
   align-items: center;
   animation: none;
+}
+
+@media (max-width: 650px) {
+  @keyframes minislide {
+    0%   {transform: translateX(0);}
+    25%  {transform: translateX(-25%);}
+    50%  {transform: translateX(-60%);}
+    75%  {transform: translateX(-25%);}
+    100% {transform: translateX(0);}
+  }
+
+  .mix-anim, .not-anim {
+    animation: 10s minislide infinite linear;
+  }
+}
+
+@media (min-width: 540px) {
+  .not-anim {
+    animation: none;
+  }
+}
+
+@media (min-width: 760px) {
+  .mix-anim {
+    animation: none;
+  }
 }
