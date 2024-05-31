@@ -28,6 +28,10 @@ export const html = {
 	name: "HTML",
 	source: "/svg/html5-02-svgrepo-com.svg",
 };
+export const java = {
+	name: "Java",
+	source: "/svg/java-svgrepo-com.svg",
+};
 export const javascript = {
 	name: "JavaScript",
 	source: "/svg/javascript-svgrepo-com.svg",

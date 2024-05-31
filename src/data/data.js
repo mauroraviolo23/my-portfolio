@@ -5,6 +5,7 @@ import {
 	express,
 	html,
 	javascript,
+	java,
 	mysql,
 	nestjs,
 	nodejs,
